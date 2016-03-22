@@ -3,7 +3,9 @@
 one:
   name: MyString
   nickname: MyString
+  email: mail@tw.com
 
 two:
   name: MyString
   nickname: MyString
+  email: mail2@tw.com
