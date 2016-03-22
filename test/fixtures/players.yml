@@ -1,11 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
-  name: MyString
-  nickname: MyString
+first_player:
+  name: FirstPlayer
+  nickname: numba1
   email: mail@tw.com
 
-two:
-  name: MyString
-  nickname: MyString
-  email: mail2@tw.com
+player_with_no_nickname:
+  name: Jo
+  email: jo@jo.com
+
+player_with_nickname:
+  name: JohnDoe
+  nickname: JD
+  email: jo@jo.com
