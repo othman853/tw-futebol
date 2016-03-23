@@ -1,0 +1,29 @@
+<% if flash[:success] %>
+  <div id="success-message"> <%= flash[:success] %> </div>
+<% end %>
+
+<% if @players.count > 0 %>
+  <table>
+    <thead>
+      <th> Name </th>
+      <th> Email </th>
+      <th> Nickname</th>
+    </thead>
+
+    <tbody>
+
+      <% @players.each do |player| %>
+
+      <tr>
+        <td> <%= player.name %> </td>
+        <td> <%= player.email %> </td>
+        <td> <%= player.nickname %> </td>
+      </tr>
+
+      <% end %>
+    </tbody>
+
+  </table>
+<% else %>
+  <p>There are no players available at the moment.</p>
+<% end %>

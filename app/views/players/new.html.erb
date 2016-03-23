@@ -1,0 +1,22 @@
+<%= form_for(:player, :url => players_path, :html => {:id => "new-player-form"}) do |player| %>
+
+  <div class="form-group">
+    <p> <%= player.label :name %> </p>
+    <p> <%= player.text_field :name %></p>
+  </div>
+
+  <div class="form-group">
+    <p> <%= player.label :email %> </p>
+    <p> <%= player.text_field :email %></p>
+  </div>
+
+  <div class="form-group">
+    <p> <%= player.label :nickname %> (optional)</p>
+    <p> <%= player.text_field :nickname %></p>
+  </div>
+
+  <div class="form-group">
+    <p> <%= player.submit %> </p>
+  </div>
+
+<% end %>
